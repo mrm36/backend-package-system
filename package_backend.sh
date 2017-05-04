@@ -1,6 +1,6 @@
 echo "Packaging Bundle..."
 
-packageNum=`./testRabbitMQClient.php nextPackage backendPackage-v | xargs`
+packageNum=`./testRabbitMQClient.php backendPackage-v | xargs`
 	cd temp/
 	echo "MySQL Password?"
 		mkdir mySqlData
