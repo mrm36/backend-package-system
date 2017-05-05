@@ -21,7 +21,7 @@ packageNum=`./testRabbitMQClient.php backendPackage-v | xargs`
 	
 	# Scp package to the deploy server
 	echo "Sending to deploy server..."
-	sshpass -p pway088541234 scp -r backendPackage-v"$packageNum".tar.gz uzair@192.168.2.30:/home/uzair/Packages/
+	scp -r backendPackage-v"$packageNum".tar.gz uzair@192.168.2.30:/home/uzair/Packages/
 	
 	cp backendPackage-v"$packageNum".tar.gz backendPackages/
 	rm backendPackage-v"$packageNum".tar.gz
