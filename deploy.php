@@ -8,7 +8,7 @@ $request = array();
 $request['type'] = "deploy";
 $request['package'] = "BE";
 $request['tier'] = "qa";
-$request['packageName'] = $argv[4];
+$request['packageName'] = "backendPackage-v";
 $response = $client->send_request($request);
 print_r($response);
 
